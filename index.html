@@ -16,7 +16,7 @@
     <nav class="site-header__nav" aria-label="Secciones">
       <a href="#configuracion">Configuración</a>
       <a href="#componentes">Componentes</a>
-      <a href="#consulta">Consulta</a>
+      <a href="#consulta" data-open-consult>Consulta</a>
     </nav>
   </header>
 
@@ -24,7 +24,7 @@
     <!-- HERO PRINCIPAL -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__bg" aria-hidden="true">
-        <img src="images/header-pack-asalto.JPG" alt="">
+        <img src="images/header-pack-asalto-generado.png" alt="Operador de airsoft saltando un muro con réplica ligera para Pack Asalto">
       </div>
       <div class="hero__content page-shell">
         <p class="eyebrow reveal">O'Clock Airsoft · Preparación de respuesta</p>
@@ -35,7 +35,7 @@
         </p>
         <div class="hero__actions reveal">
           <a class="button button--primary" href="#configuracion">Ver configuración</a>
-          <a class="button button--secondary" href="#consulta">Consultar Pack Asalto</a>
+          <a class="button button--secondary" href="#consulta" data-open-consult>Consultar Pack Asalto</a>
         </div>
       </div>
     </section>
@@ -123,34 +123,34 @@
             No se plantea como una lista cerrada de piezas. Se seleccionan componentes y ajustes según plataforma, uso y comportamiento buscado.
           </p>
         </div>
-        <div class="component-rail">
-          <article class="component-item reveal">
-            <img src="images/component-extra.png" alt="Gatillo electrónico para control del disparo">
+        <div class="component-grid">
+          <article class="component-card reveal">
+            <img src="images/gatillo-leviathan.jpeg" alt="Gatillo electrónico Leviathan para Pack Asalto">
             <div><span>01</span><h3>Gatillo electrónico / control del disparo</h3><p>Lectura más precisa y sensación de disparo más directa.</p></div>
           </article>
-          <article class="component-item reveal">
+          <article class="component-card reveal">
             <img src="images/motor-brushless.png" alt="Motor seleccionado para Pack Asalto">
             <div><span>02</span><h3>Motor seleccionado</h3><p>Entrega de potencia estable para mantener respuesta en uso exigente.</p></div>
           </article>
-          <article class="component-item reveal">
+          <article class="component-card reveal">
             <img src="images/engranajes-seleccionados.png" alt="Engranajes seleccionados para transmisión AEG">
             <div><span>03</span><h3>Engranajes seleccionados</h3><p>Transmisión ajustada al objetivo de respuesta y fiabilidad.</p></div>
           </article>
-          <article class="component-item reveal">
+          <article class="component-card reveal">
             <img src="images/component-piston.png" alt="Pistón reforzado para Pack Asalto">
             <div><span>04</span><h3>Pistón reforzado</h3><p>Base mecánica preparada para un ciclo más sólido y predecible.</p></div>
           </article>
-          <article class="component-item reveal">
+          <article class="component-card reveal">
             <img src="images/cilindro-monobloque.png" alt="Cilindro monobloque para Pack Asalto">
             <div><span>05</span><h3>Cilindro monobloque</h3><p>Cilindro de una sola pieza diseñado para mejorar la estabilidad del conjunto neumático y reducir pérdidas innecesarias de aire. Su construcción monobloque favorece un comportamiento más sólido y coherente en configuraciones exigentes.</p><strong>Mayor estabilidad neumática y mejor aprovechamiento del volumen de aire.</strong></div>
           </article>
-          <article class="component-item reveal">
-            <img src="images/component-spring-guide.png" alt="Guía de muelle para estabilidad interna">
+          <article class="component-card reveal">
+            <img src="images/muelles.jpeg" alt="Muelles para ajuste interno del Pack Asalto">
             <div><span>06</span><h3>Guía de muelle</h3><p>Estabiliza el movimiento interno durante el ciclo.</p></div>
           </article>
-          <article class="component-item reveal">
-            <img src="images/component-piston-head.png" alt="Cabeza de pistón Joule Master para Pack Asalto">
-            <div><span>07</span><h3>Cabeza de pistón Joule Master</h3><p>Cabeza de pistón diseñada para mejorar la eficiencia del conjunto neumático, favorecer un sellado más estable y aportar una entrega de energía más consistente en cada disparo.</p><strong>Mayor eficiencia y respuesta más estable.</strong></div>
+          <article class="component-card reveal">
+            <img src="images/speed-master.jpeg" alt="Cabeza de pistón Speed Master para Pack Asalto">
+            <div><span>07</span><h3>Cabeza de pistón Speed Master</h3><p>Cabeza de pistón ligera orientada a respuesta rápida, sellado estable y una entrega de energía más ágil.</p><strong>Mayor eficiencia y respuesta más viva.</strong></div>
           </article>
         </div>
       </div>
@@ -218,8 +218,26 @@
           <article class="compat-card reveal"><span>05</span><strong>Instalación técnica recomendada</strong></article>
         </div>
       </div>
+        <div class="section-inline-cta reveal"><a class="button button--primary" href="#consulta" data-open-consult>Consultar Pack Asalto</a></div>
+
     </section>
     <!-- FIN COMPATIBILIDAD -->
+
+    <!-- CONTACTO DIRECTO -->
+    <section class="direct-contact section-pad" aria-label="Contacto directo">
+      <div class="page-shell">
+        <aside class="contact-card reveal" aria-label="Contacto directo">
+          <p class="section-kicker">Contacto directo</p>
+          <h3>Te ayudamos a decidir antes de comprar</h3>
+          <p>Envíanos tu réplica, el uso que le das y qué quieres mejorar. Mejor consultar primero que montar piezas que no trabajen bien juntas.</p>
+          <div class="contact-card__actions">
+            <a class="button button--primary" href="#consulta" data-open-consult>Consultar mi réplica</a>
+            <a class="button button--secondary" href="https://wa.me/34XXXXXXXXX">WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- FIN CONTACTO DIRECTO -->
 
     <!-- FORMULARIO DE CONSULTA -->
     <section id="consulta" class="consult section-pad" aria-labelledby="consult-title">
@@ -248,6 +266,22 @@
     </section>
     <!-- FIN FORMULARIO DE CONSULTA -->
 
+<!-- OTROS PACKS -->
+    <section id="otros-packs" class="other-packs section-pad section-raised" aria-labelledby="other-title">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Otras configuraciones</p>
+          <h2 id="other-title">Elige el enfoque según tu forma de jugar</h2>
+        </div>
+        <div class="other-packs__grid">
+          <a class="pack-link reveal" href="https://pedropcg-ops.github.io/O-Clock-Airsoft-Pack-Fusilero/"><span>Pack Fusilero</span><strong>Equilibrio general</strong></a>
+          <a class="pack-link reveal" href="https://pedropcg-ops.github.io/O-Clock-Airsoft-Pack-Tirador/"><span>Pack Tirador</span><strong>Precisión controlada</strong></a>
+          <a class="pack-link reveal" href="https://pedropcg-ops.github.io/O-Clock-Airsoft-Pack-DMR/"><span>Pack DMR</span><strong>Largo alcance y bola pesada</strong></a>
+        </div>
+      </div>
+    </section>
+    <!-- FIN OTROS PACKS -->
+
     <!-- CTA FINAL -->
     <section class="final-cta" aria-labelledby="final-title">
       <div class="final-cta__bg" aria-hidden="true">
@@ -260,31 +294,38 @@
           Cuéntanos tu base y qué tipo de respuesta buscas. Te orientamos antes de montar piezas sin criterio.
         </p>
         <div class="final-cta__actions">
-          <a class="button button--primary" href="#consulta">Consultar Pack Asalto</a>
+          <a class="button button--primary" href="#consulta" data-open-consult>Consultar Pack Asalto</a>
           <a class="button button--secondary" href="#otros-packs">Ver otros packs</a>
         </div>
       </div>
     </section>
     <!-- FIN CTA FINAL -->
-
-    <!-- OTROS PACKS -->
-    <section id="otros-packs" class="other-packs section-pad section-raised" aria-labelledby="other-title">
-      <div class="page-shell">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Otras configuraciones</p>
-          <h2 id="other-title">Elige el enfoque según tu forma de jugar</h2>
-        </div>
-        <div class="other-packs__grid">
-          <a class="pack-link reveal" href="#"><span>Pack Fusilero</span><strong>Equilibrio general</strong></a>
-          <a class="pack-link reveal" href="#"><span>Pack Tirador</span><strong>Precisión controlada</strong></a>
-          <a class="pack-link reveal" href="#"><span>Pack DMR</span><strong>Largo alcance y bola pesada</strong></a>
-        </div>
-      </div>
-    </section>
-    <!-- FIN OTROS PACKS -->
   </main>
+  <!-- POP-UP DE CONSULTA -->
+  <div class="consult-modal" id="consult-modal" aria-hidden="true">
+    <div class="consult-modal__backdrop" data-close-consult></div>
+    <section class="consult-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-consult-title">
+      <button class="consult-modal__close" type="button" data-close-consult aria-label="Cerrar consulta">&times;</button>
+      <p class="section-kicker">Consulta técnica</p>
+      <h2 id="modal-consult-title">Consultar Pack Asalto</h2>
+      <p>Déjanos tu réplica y el comportamiento que buscas. Revisaremos compatibilidad antes de recomendar una configuración.</p>
+      <form class="consult-form consult-form--modal" action="https://formspree.io/f/xnjrakep" method="POST">
+        <input type="hidden" name="_subject" value="Nueva consulta Pack Asalto - O’Clock Airsoft">
+        <input type="hidden" name="_next" value="gracias.html">
+        <input type="hidden" name="pack" value="Pack Asalto">
+        <label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>WhatsApp<input type="tel" name="whatsapp" autocomplete="tel"></label>
+        <label>Réplica base<input type="text" name="replica"></label>
+        <label class="consult-form__wide">Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+        <button class="button button--primary" type="submit">Enviar consulta</button>
+      </form>
+    </section>
+  </div>
+  <!-- FIN POP-UP DE CONSULTA -->
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
