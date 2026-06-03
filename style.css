@@ -361,8 +361,8 @@ p {
 }
 
 .pack-showcase__media img {
-  object-fit: contain;
-  padding: clamp(18px, 3vw, 34px);
+  object-fit: cover;
+  padding: 0;
 }
 
 .feature-list {
@@ -876,6 +876,25 @@ body.is-modal-open { overflow: hidden; }
   text-decoration: none;
 }
 
+.component-card img:not(.vector-icon) {
+  object-fit: cover;
+  background: #0e0a08;
+}
+
+.benefit-card:has(.vector-icon),
+.compat-card:has(.vector-icon) {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  column-gap: 20px;
+  align-content: start;
+  align-items: start;
+}
+
+.benefit-card:has(.vector-icon) > :not(.vector-icon),
+.compat-card:has(.vector-icon) > :not(.vector-icon) {
+  grid-column: 2;
+}
+
 .direct-contact {
   padding-top: clamp(60px, 8vw, 100px);
   padding-bottom: clamp(24px, 4vw, 46px);
@@ -910,7 +929,36 @@ body.is-modal-open { overflow: hidden; }
   margin-top: 24px;
 }
 
+.vector-icon {
+  display: block;
+  grid-column: 1;
+  grid-row: 1 / span 5;
+  width: 76px;
+  height: 76px;
+  margin: 0;
+  object-fit: contain;
+  opacity: 0.96;
+  filter: brightness(0) invert(1) drop-shadow(0 12px 22px rgba(239, 60, 51, 0.22));
+}
+
+.compat-card .vector-icon {
+  width: 68px;
+  height: 68px;
+}
+
 @media (max-width: 700px) {
+  .benefit-card:has(.vector-icon),
+  .compat-card:has(.vector-icon) {
+    grid-template-columns: 70px minmax(0, 1fr);
+    column-gap: 16px;
+  }
+
+  .vector-icon,
+  .compat-card .vector-icon {
+    width: 62px;
+    height: 62px;
+  }
+
   .contact-card__actions {
     align-items: stretch;
     flex-direction: column;
